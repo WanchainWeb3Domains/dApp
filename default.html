@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8"> 
+<meta http-equiv="encoding" content="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta content="width=device-width, initial-scale=1" name="viewport" id="viewport" runat="server" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"/>
+<meta property="og:image" itemprop="image" content="/images/sysdomains.jpg">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="/fonts/Fontawesome-pro/css/fontawesome.min.css" />
+<link type="text/css" rel="stylesheet" href="/fonts/Fontawesome-pro/css/all.css" />
+<link type="text/css" rel="stylesheet" href="/fonts/Poppins/fonts.css" />
+<link type="text/css" rel="stylesheet" href="/lib/jQuery/PluginStack/Wow-js/animate.css" />
+<link type="text/css" rel="stylesheet" href="/css/intro.css?v=3" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootbox@5.5.2/bootbox.all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="/lib/jQuery/PluginStack/Wow-js/wow.min.js"></script>
+<script type="text/javascript" src="/js/custom.js?v=12"></script>
+<link rel="icon" href="/favicon/favicon-32x32.png?v=1" />
+<link rel="shortcut icon" href="/favicon/favicon-32x32.png?v=1" />
+<title>Wanchain Web3 Domains</title>
+<meta name="description" content="Wanchain Web3 Domains">
+<style>
+.Countdown{font-size: 45px; margin-top: 30px; margin-bottom: 20px;}
+.Countdown div {display: inline-block; color: #fff; margin: 0px 15px;font-weight: bold;}
+.Countdown span {display: block; text-align: center; font-size: 15px;font-weight: normal;}
+@media (max-width:480px){
+	.Countdown{font-size: 35px;margin-top:15px;}
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".preeloader").fadeOut(1500);
+		$(".Countdown").countdown("2022-09-15 14:00:00 UTC", function(event) {
+			$(this).html(
+			  event.strftime('<div>%D <span>days</span></div><div>%H <span>hours</span></div><div>%M <span>minutes</span></div><div>%S <span>seconds</span></div>')
+			);
+		});
+	});
+</script>
+</head>
+
+<body>
+<div class="preeloader">
+	<div class="preloader-spinner"></div>
+</div>
+
+<div id="coming-soon" style="">
+	<div class="coming-body">
+		<div class="container">
+			<div class="coming-logo" style="margin-bottom:30px;"><img src="/logo/logo.png" style="max-width:210px;margin:0 auto;"/></div>
+			<h1 class="coming-soon-title-big">Wanchain Web3 Domains</h1>
+			<h1 class="coming-soon-title-small">COMING SOON</h1>
+			<div class="note-date" style="font-size: 20px; margin-left:0px;padding-left:0px;">Sep 15 - 14:00 UTC</div>
+			<div class="Countdown" class="text-left"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

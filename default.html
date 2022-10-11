@@ -5,60 +5,368 @@
 <meta charset="UTF-8"> 
 <meta http-equiv="encoding" content="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta content="width=device-width, initial-scale=1" name="viewport" id="viewport" runat="server" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"/>
-<meta property="og:image" itemprop="image" content="/images/sysdomains.jpg">
+<meta property="og:image" itemprop="image" content="/images/cover-site.jpg?v=1">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-<link type="text/css" rel="stylesheet" href="/fonts/Fontawesome-pro/css/fontawesome.min.css" />
-<link type="text/css" rel="stylesheet" href="/fonts/Fontawesome-pro/css/all.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lobibox@1.2.7/css/lobibox.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/web3fonts@1.0.0/css/fontawesome.min.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/web3fonts@1.0.0/css/all.min.css" />
 <link type="text/css" rel="stylesheet" href="/fonts/Poppins/fonts.css" />
 <link type="text/css" rel="stylesheet" href="/lib/jQuery/PluginStack/Wow-js/animate.css" />
-<link type="text/css" rel="stylesheet" href="/css/intro.css?v=3" />
+<link type="text/css" rel="stylesheet" href="/css/custom.css?v=14" />
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootbox@5.5.2/bootbox.all.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
 <script type="text/javascript" src="/lib/jQuery/PluginStack/Wow-js/wow.min.js"></script>
-<script type="text/javascript" src="/js/custom.js?v=12"></script>
-<link rel="icon" href="/favicon/favicon-32x32.png?v=1" />
-<link rel="shortcut icon" href="/favicon/favicon-32x32.png?v=1" />
+<script type="text/javascript" src="/js/particles.js?v=2"></script>
+<script type="text/javascript" src="/js/custom.js?v=5"></script>
+<link rel="icon" href="/favicon/favicon-96x96.png" />
+<link rel="shortcut icon" href="/favicon/favicon-96x96.png" />
+<meta name="description" property="description" content="Wanchain Web3 Domains - Decentralized names are secured on the blockchain" />
 <title>Wanchain Web3 Domains</title>
-<meta name="description" content="Wanchain Web3 Domains">
-<style>
-.Countdown{font-size: 45px; margin-top: 30px; margin-bottom: 20px;}
-.Countdown div {display: inline-block; color: #fff; margin: 0px 15px;font-weight: bold;}
-.Countdown span {display: block; text-align: center; font-size: 15px;font-weight: normal;}
-@media (max-width:480px){
-	.Countdown{font-size: 35px;margin-top:15px;}
-}
-</style>
-<script type="text/javascript">
-	$(document).ready(function() {
-		$(".preeloader").fadeOut(1500);
-		$(".Countdown").countdown("2022-09-15 14:00:00 UTC", function(event) {
-			$(this).html(
-			  event.strftime('<div>%D <span>days</span></div><div>%H <span>hours</span></div><div>%M <span>minutes</span></div><div>%S <span>seconds</span></div>')
-			);
-		});
-	});
-</script>
 </head>
-
 <body>
-<div class="preeloader">
-	<div class="preloader-spinner"></div>
-</div>
-
-<div id="coming-soon" style="">
-	<div class="coming-body">
-		<div class="container">
-			<div class="coming-logo" style="margin-bottom:30px;"><img src="/logo/logo.png" style="max-width:210px;margin:0 auto;"/></div>
-			<h1 class="coming-soon-title-big">Wanchain Web3 Domains</h1>
-			<h1 class="coming-soon-title-small">COMING SOON</h1>
-			<div class="note-date" style="font-size: 20px; margin-left:0px;padding-left:0px;">Sep 15 - 14:00 UTC</div>
-			<div class="Countdown" class="text-left"></div>
+<div class="warp-header" id="home">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-md-2 col-sm-2 col-xs-12">
+				<div class="logo">
+					<a href="/"><img src="/logo/logo.png?=3"/></a>
+				</div>
+			</div>
+			<div class="col-md-10 col-sm-10 col-xs-12 text-right">
+				<div class="menu">
+					<div class="menu-close"><i class="fal fa-times-circle"></i></div>
+					<ul class="nav">
+						<li class="nav-item active"><a data-id="#home" href="/">Home</a></li>
+						<li class="nav-item"><a href="/app">Launch App</a></li>
+						<li class="nav-item" style='display:none;'><a href="/search">Bulk Search</a></li>
+						<li class="nav-item" style='display:none;'><a href="/yourdomain">Find Your Domain</a></li>
+						<li class="nav-item"><a data-id="#greatfeatures" href="#">Great Features</a></li>
+						<li class="nav-item"><a data-id="#roadmap" href="#">Roadmap</a></li>
+						<li class="nav-item"><a data-id="#faq" href="#">FAQ</a></li>
+					</ul>
+					<div class="menu-btn" style="display:none;">
+						<a class="btn btn-medium btn-rounded btn-transparent-white btn-hvr-white" href="/app.html">
+							Connect Wallet
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
+	<div class="click-menu">
+		<i class="fal fa-bars"></i>
+	</div>
+</div>
+<div class="warp-banner">
+	<div id="particles-js" class="particles-container particles-js">
+		<canvas class="particles-js-canvas-el" width="1914" height="541" style="width: 100%; height: 100%;"></canvas>
+	</div>
+	<div class="container">
+		<div class="banner-center" style='text-align: center; margin-top: 10px;'>
+			<h1 class="banner-title title-color">Wanchain Web3 Domains</h1>
+			<div class="banner-des">Decentralized names are secured on the blockchain</div>
+			<div class="form-search input-group hidden" style="display:none;">
+				<input type="text" class="form-control form-control-lg txtdomain" placeholder="Search name or address"/>
+				<div class="input-group-append">
+					<span class="btn btn-default btn-success btn-outline-secondary btn-search" style="cursor:pointer;">Search</span>
+				</div>
+			</div>
+			<a class="btn btn-slider btn-large btn-rounded btn-blue btn-hvr-white btn-custom" style="margin-right: 5px; margin-bottom: 5px;" href="/app">
+				Launch App (Mainnet)
+			</a>
+			<a class="btn btn-slider btn-large btn-rounded btn-blue btn-hvr-white btn-custom" style="margin-bottom: 5px; display: none;" href="/search">
+				Search
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="warp-section" id="domain">
+	<div class="container">
+		<div class="domain-function row align-items-center">
+			<div class="domain-col domain-left wow fadeInLeft">
+				<div class="form-group domain-items">
+					<h4>REPLACE A CRYPTO ADDRESS WITH A DOMAIN NAME</h4>
+					<div class="domain-des">In the past, whenever you sent crypto to another person, you needed their wallet address, which consists of a long string of letters and numbers. Today, all you need is a domain name, making it easier than ever to send and receive cryptocurrencies. It’s security, privacy and safety.</div>
+				</div>
+			</div>
+			<div class="domain-col domain-right wow fadeInRight">
+				<img src="/images/hero-01.png"/>
+			</div>
+		</div>
+		<div class="domain-bot domain-function align-items-center">
+			<div class="domain-col domain-left wow fadeInRight">
+				<div class="form-group domain-items">
+					<h4>ONE-TIME REGISTRATION FEE, NO RENEWAL FEES</h4>
+					<div class="domain-des">WAN domains are not rented, after buying a .wan domain, it is yours forever, no one can request any renewal fees from you. Domains can be stored in your wallet, like cryptocurrency and only you can control it.</div>
+				</div>
+			</div>
+			<div class="domain-col domain-right wow fadeInLeft">
+				<img src="/images/hero-02.png"/>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="warp-section" id="greatfeatures">
+	<div class="container">
+		<div class="warp-top">
+			<h3 class="title-section">Great Features</h3>
+			<span class="title-border"></span>
+		</div>
+		<div class="warp-eco row">
+			<div class="eco-items one col-md-3 col-sm-3 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
+				<div class="eco-body">
+					<div class="eco-icon">
+						<i class="fal fa-user-astronaut"></i>
+						<span class="ei-icon-bg"></span>
+					</div>
+					<div class="eco-text">
+						<div class="eco-name">
+							NFT Avatar
+						</div>
+						<div class="eco-des">
+							You can set your own picture as your NFT Avatar easily.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="eco-items two col-md-3 col-sm-3 col-xs-12 wow fadeInUp" data-wow-delay="0.5s">
+				<div class="eco-body">
+					<div class="eco-icon">
+						<i class="fal fa-id-card-alt"></i>
+						<span class="ei-icon-bg"></span>
+					</div>
+					<div class="eco-text">
+						<div class="eco-name">
+							Public Profile
+						</div>
+						<div class="eco-des">
+							Public visible profile information such as your website, social media links.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="eco-items three col-md-3 col-sm-3 col-xs-12 wow fadeInUp" data-wow-delay="0.7s">
+				<div class="eco-body">
+					<div class="eco-icon">
+						<i class="fal fa-chart-network"></i>
+						<span class="ei-icon-bg"></span>
+					</div>
+					<div class="eco-text">
+						<div class="eco-name">
+							Unlimited Subdomains
+						</div>
+						<div class="eco-des">
+							You can create unlimited subdomains for your company members easily.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="eco-items four col-md-3 col-sm-3 col-xs-12 wow fadeInUp" data-wow-delay="0.9s">
+				<div class="eco-body">
+					<div class="eco-icon">
+						<i class="fal fa-database"></i>
+						<span class="ei-icon-bg"></span>
+					</div>
+					<div class="eco-text">
+						<div class="eco-name">
+							NFT Gallery
+						</div>
+						<div class="eco-des">
+							Your NFT collections can be displayed and organized many ready-made functions.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="eco-items four col-md-3 col-sm-3 col-xs-12 wow fadeInUp" data-wow-delay="1.1s">
+				<div class="eco-body">
+					<div class="eco-icon">
+						<i class="far fa-cubes"></i>
+						<span class="ei-icon-bg"></span>
+					</div>
+					<div class="eco-text">
+						<div class="eco-name">
+							SDK & API
+						</div>
+						<div class="eco-des">
+							SDK integrates with third-party platforms like wallets, dapps, defi, etc.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="eco-items three col-md-3 col-sm-3 col-xs-12 wow fadeInUp" data-wow-delay="1.3s">
+				<div class="eco-body">
+					<div class="eco-icon">
+						<i class="fal fa-link"></i>
+						<span class="ei-icon-bg"></span>
+					</div>
+					<div class="eco-text">
+						<div class="eco-name">
+							Transfer wan domains
+						</div>
+						<div class="eco-des">
+							Transfer .wan domains between domains or addresses easily.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="eco-items two col-md-3 col-sm-3 col-xs-12 wow fadeInUp" data-wow-delay="1.5s">
+				<div class="eco-body">
+					<div class="eco-icon">
+						<i class="fal fa-globe-asia"></i>
+						<span class="ei-icon-bg"></span>
+					</div>
+					<div class="eco-text">
+						<div class="eco-name">
+							Multi Wallet address
+						</div>
+						<div class="eco-des">
+							Store many different types of wallet addresses such as: BTC, ETH, Solana, etc.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="eco-items one col-md-3 col-sm-3 col-xs-12 wow fadeInUp" data-wow-delay="1.7s">
+				<div class="eco-body">
+					<div class="eco-icon">
+						<i class="fal fa-globe"></i>
+						<span class="ei-icon-bg"></span>
+					</div>
+					<div class="eco-text">
+						<div class="eco-name">
+							Custom Data
+						</div>
+						<div class="eco-des">
+							Store a variety of custom data records that can be expanded later.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="warp-section" id="roadmap">
+	<div class="container">
+		<div class="warp-top">
+			<h3 class="title-section">Roadmap</h3>
+			<span class="title-border"></span>
+		</div>
+		<div class="warp-roadmap control-body">
+			<div class="roadmap-timeline"></div>
+			<div class="roadmap-char row">
+				<div class="roadmap-items col-md-3 col-sm-3 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
+					<div class="roadmap-body">
+						<div class="roadmap-title"><span>Q4/2022</span></div>
+						<div class="roadmap-text">
+							<ul>
+								<li>Launch website & twitter</li>
+								<li>Launch testnet & mainnet</li>
+								<li>Features: set nft avatar, social links & transfer domains</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="roadmap-items col-md-3 col-sm-3 col-xs-12 wow fadeInUp" data-wow-delay="0.5s">
+					<div class="roadmap-body">
+						<div class="roadmap-title"><span>Q1/2023</span></div>
+						<div class="roadmap-text">
+							<ul>
+								<li>List domain on nft makerplace</li>
+								<li>Build sdk & api for third-party</li>
+								<li>Launch profile page</li>
+								<li>Launch nft gallery</li>
+								<li>Launch subdomain</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="roadmap-items col-md-3 col-sm-3 col-xs-12 wow fadeInUp" data-wow-delay="0.7s">
+					<div class="roadmap-body">
+						<div class="roadmap-title"><span>Q2-Q3/2023</span></div>
+						<div class="roadmap-text">
+							<ul>
+								<li>Update smart contract V2</li>
+								<li>Launch landing builder tool</li>
+								<li>Launch referral program</li>
+								<li>Launch extension: Chrome & Firefox</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="roadmap-items col-md-3 col-sm-3 col-xs-12 wow fadeInUp" data-wow-delay="0.9s">
+					<div class="roadmap-body">
+						<div class="roadmap-title"><span>Q4/2023</span></div>
+						<div class="roadmap-text">
+							<ul>
+								<li>Open forum for community</li>
+								<li>$WWD token airdrop for holder</li>
+								<li>$WWD staking & farming</li>
+								<li>List $WWD on CEX exchange</li>
+								<li>Buyback & burn $WWD</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="warp-section" id="faq">
+	<div class="container">
+		<div class="warp-top">
+			<h3 class="title-section">FAQ</h3>
+			<span class="title-border"></span>
+		</div>
+		<div class="warp-faqs row control-body wow fadeInUp">
+			<div class="col-md-7 col-sm-7 col-xs-12">
+				<div class="faqs-items">
+					<div class="faqs-title active">What is an NFT Domain?</div>
+					<div class="faqs-des">
+						NFT Domains are new web extensions launched as smart contracts on public blockchains. NFT domains can be stored in a crypto wallet, and it belongs to the owner, no third-party company or individual can seize it.
+					</div>
+				</div>
+				<div class="faqs-items">
+					<div class="faqs-title">Can I transfer my blockchain domains?</div>
+					<div class="faqs-des">Yes, .wan domains are build on WRC721 (NFT), you can transfer it using an WRC721 enabled wallet.</div>
+				</div>
+				<div class="faqs-items">
+					<div class="faqs-title">Are wan domain compatible with ICANN traditional domains?</div>
+					<div class="faqs-des">No, .wan domains are built using blockchain technology. It can help you to launch distributed web which traditional domains cannot do.</div>
+				</div>
+				<div class="faqs-items">
+					<div class="faqs-title">How to connect Metamask wallet?</div>
+					<div class="faqs-des">Setup Metamask Goto chainlist.org. Search Wanchain then click 'Connect Wallet'</div>
+				</div>
+				<div class="faqs-items">
+					<div class="faqs-title">How much does it cost to register?</div>
+					<div class="faqs-des">Currently, subscription costs are set at the following rate: 5 characters or more 4 characters 3 characters 2 characters The characters 2 and 3 and 4 are priced as 'premium' to reflect the small number of these names available.</div>
+				</div>
+			</div>
+			<div class="col-md-5 col-sm-5 col-xs-12">
+				<img src="/images/faq-mobile.png"/>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="warp-footer">
+	<div class="container text-center">
+		<div class="warp-social">
+			<a href="https://twitter.com/wanchaindomains" target="_blank" class="wow fadeInUp" data-wow-delay="0.3s"><i class="fab fa-twitter"></i></a>
+			<a href="https://github.com/orgs/WanchainWeb3Domains/repositories" target="_blank" class="wow fadeInUp" data-wow-delay="0.5s"><i class="fab fa-github"></i></a>
+		</div>
+	</div>
+	<div class="warp-copyright text-center">
+		Copyright © 2022 Wanchain Web3 Domains. All Rights Reserved
+	</div>
+</div>
+<div class="back-to-top text-center">
+	<i class="far fa-angle-up"></i>
+	TOP
 </div>
 </body>
 </html>

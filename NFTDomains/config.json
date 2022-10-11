@@ -1,0 +1,15 @@
+{
+			"background":"/NFTDomains/bg.png",
+			"color1": "#003764",
+			"color2": "#0083b4",
+			"name": "Wanchain Web3 Domains",
+			"symbol": "WW3D",
+			"host": "https://app.wandomains.xyz",
+			"external_url": "https://app.wandomains.xyz",
+			"position": "center",
+			"text_x": 0,
+			"text_y": 100,
+			"chain_name": "Wanchain",
+			"tlds":"wan",
+			"description":"Wanchain Web3 Domains. Decentralized names are secured on the blockchain - Buy once use forever"
+		}

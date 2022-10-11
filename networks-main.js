@@ -9,7 +9,7 @@ const networks = [
 			"rpcUrls": ["https://gwan-ssl.wandevs.org:56891"],
 			"blockExplorerUrls": ["https://wanexplorer.io/"],
 			"contactAddress": "0xf849d8227b05d9c603e703989b448b2e51f7c3cd",
-			"tld": ".xdc", 
+			"tld": ".wan", 
 			"logo": "/images/cryptologo/wan.svg",
 			"baseUri" : "https://app.wandomains.xyz/api/nftdomains/metadata/",
 			"visible" : true
